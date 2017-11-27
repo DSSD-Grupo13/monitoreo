@@ -34,10 +34,27 @@ $promedio = $finalizados / $total_casos;
       title: {
           text: 'Casos finalizados en el mes que inician'
       },
+      tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
       xAxis: {
           categories: ['Finalizados, Pendientes']
       },
       series: [{
+        showInLegend: false,
         data: [{name:'Finalizados',y: <?php echo $finalizados ?>}, {name:'Pendientes', y: <?php echo $pendientes ?>}]
       }]
   });

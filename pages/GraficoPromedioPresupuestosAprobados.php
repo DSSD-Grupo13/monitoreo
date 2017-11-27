@@ -24,10 +24,27 @@ $promedio = $aprobados / $total;
       title: {
           text: 'Incidentes con presupuestos aprobados'
       },
+      tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
       xAxis: {
           categories: ['Aprobados, Rechazados']
       },
       series: [{
+        showInLegend: false,
         data: [{name:'Aprobados',y: <?php echo $aprobados ?>}, {name:'Rechazados', y: <?php echo $rechazados ?>}]
       }]
   });
