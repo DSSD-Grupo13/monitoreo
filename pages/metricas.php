@@ -26,7 +26,7 @@
       <br><br>
       <div class="row">
         <div class="col"> <?php include 'GraficoIncidentesPorTipo.php' ?> </div>
-        <div class="col"> </div>
+        <div class="col"> <?php include 'GraficoIncidentesPorEstado.php' ?> </div>
       </div>
     </div>
   </body>
