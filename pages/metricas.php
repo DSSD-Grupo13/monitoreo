@@ -23,8 +23,9 @@
         <div class="col"> <?php include 'GraficoPromedioFinalizadosMes.php' ?> </div>
         <div class="col"> <?php include 'GraficoPromedioPresupuestosAprobados.php' ?> </div>
       </div>
+      <br><br>
       <div class="row">
-        <div class="col"> </div>
+        <div class="col"> <?php include 'GraficoIncidentesPorTipo.php' ?> </div>
         <div class="col"> </div>
       </div>
     </div>
