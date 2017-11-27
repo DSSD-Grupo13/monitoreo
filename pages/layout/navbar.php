@@ -40,10 +40,7 @@
                     <a href="informacion.php"><i class="fa fa-info-circle fa-fw"></i> Informaci&oacute;n</a>
                 </li>
                 <li>
-                    <a href="PromedioPresupuestosAprobados.php"><i class="fa fa-bar-chart"></i> Promedio Presupuestos Aprobados</a>
-                </li>
-                <li>
-                    <a href="PromedioFinalizadosMes.php"><i class="fa fa-pie-chart"></i> Promedio Casos Finalizados en el mes de iniciados </a>
+                    <a href="metricas.php"><i class="fa fa-bar-chart"></i> M&eacute;tricas </a>
                 </li>
             </ul>
         </div>
